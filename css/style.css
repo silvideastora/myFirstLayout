@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+    font-family: DM Sans;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.header-container {
+    height: 40%;
+    background-image: url("../assets/images/MaskGroup.png");
+    background-position: center;
+    background-size: 95%;
+    background-color: #F9FFF2;
+    padding-top: 1.5em;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1.8em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 22em;
+    align-items: center;
+    font-size: .8em;
+}
+
+nav button {
+    background-color: #410FF8;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    outline: none;
+    height: 2.3em;
+    width: 7em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav button:hover {
+    box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.5);
+}
+
+nav ul a:link,
+a:visited {
+    color: rgb(150, 148, 148);
+    text-decoration: none
+}
+
+.main-logo {
+    height: 100%;
+}
+
+.li-nav :hover {
+    color: black;
+    font-weight: bold;
+}
+
+header p {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.guarantee {
+    color: #0fb49b;
+}
+
+.headertext-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.main-container {
+    width: 100%;
+    height: 60%;
+}
+
+.main-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-article {
+    width: 20%;
+    height: 80%;
+    border-style: solid;
+    border-color: rgb(180, 172, 172);
+    border-radius: 4px;
+    margin: 0 3em;
+    border-width: 1.5px;
+    padding: 1.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.main-article ul {
+    list-style: none;
+    height: 4em;
+    margin-top: 2em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-article ul li {
+    padding-left: 1.3em;
+    font-size: .8em;
+}
+
+.main-article ul li:before {
+    content: url("../assets/images/checkmark-onwhite.png");
+    margin-left: -1.3em;
+    width: 1.3em;
+    font-size: 1.5em;
+    padding-right: .5em;
+}
+
+.article-div {
+    margin-top: 1em;
+}
+
+.main-article-header h2 {
+    font-size: 1.7em;
+    display: flex;
+}
+
+.main-article-header h6 {
+    color: #b1b1b1;
+}
+
+.main-article>button {
+    pointer-events: auto;
+}
+
+.main-article:hover {
+    border-style: none;
+    box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.808);
+}
+
+.main-article i {
+    font-size: .9 em;
+    color: white;
+}
+
+.main-article button {
+    background-color: #410FF8;
+    color: white;
+    height: 4em;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: .7em;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.main-article button:hover {
+    box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.808);
+}
+
+.main-article-middle {
+    width: 20%;
+    height: 80%;
+    border-style: none;
+    border-radius: 4px;
+    margin: 0 3em;
+    border-width: 1.5px;
+    padding: 1.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    transition: 0.3s;
+    background-color: #410FF8;
+    color: white;
+}
+
+.main-article-middle:hover {
+    border-style: none;
+    box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.808);
+}
+
+.main-article-middle i {
+    font-size: .9 em;
+    color: #410FF8;
+}
+
+.main-article-middle button {
+    background-color: white;
+    color: #410FF8;
+    height: 4em;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: .7em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-article-middle>button {
+    pointer-events: auto;
+}
+
+.main-article-middle button:hover {
+    box-shadow: 0 1em 1.5em 0 rgba(255, 250, 250, 0.712);
+}
+
+.main-article-middle ul {
+    list-style: none;
+    height: 4em;
+    margin-top: 2em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-article-middle ul li {
+    padding-left: 1.3em;
+    font-size: .8em;
+}
+
+.main-article-middle ul li:before {
+    content: url("../assets/images/checkmark-purple.png");
+    margin-left: -1.3em;
+    width: 1.3em;
+    font-size: 1.5em;
+    padding-right: .5em;
+}
